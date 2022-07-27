@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+      font-family: "Raleway", sans-serif
+    }
+
+    .w3-third img {
+      margin-bottom: -6px;
+      opacity: 0.8;
+      cursor: pointer
+    }
+
+    .w3-third img:hover {
+      opacity: 1
+    }
+
+    img {
+      max-width: 80%;
+      height: auto;
+    }
+
+    a {
+      text-decoration: none;
+
+    }
+
+
+
+    .fa:hover {
+      opacity: 0.7;
+    }
+
+    .projcet {
+      display: flex;
+      justify-content: space-evenly;
+    }
+
+    .more {
+      margin-top: -20px;
+      margin-bottom: 60px;
+      width: 250px;
+    }
+
+    .btnMore {
+      background-color: rgb(29, 119, 255);
+      outline: none;
+      border: 0;
+      border-radius: 10px;
+      width: 150px;
+      height: 40px;
+    }
+
+    .wrapper {
+      width: 80%;
+      min-width: 1000px;
+      position: relative;
+    }
+
+    .container1 {
+      width: 100%;
+      height: 1450px;
+      padding: 40px 40px 50px;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
+    }
+
+    .container2 {
+      width: 100%;
+      padding: 40px 40px 50px;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
+    }
+
+    .container * {
+      font-family: "Poppins", sans-serif;
+      color: black;
+      font-weight: 500;
+    }
+
+    h2 {
+      margin-bottom: 50px;
+      letter-spacing: 2px;
+      text-align: center;
+      font-size: 33px;
+
+    }
+
+    .details {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px;
+    }
+
+    .bar {
+      position: relative;
+
+      border: 2px solid #0d96e0;
+
+      border-radius: 20px;
+
+    }
+
+    .bar div {
+      position: relative;
+      width: 0;
+      height: 9px;
+      border-radius: 10px;
+      background-color: #0d96e0;
+
+
+    }
+
+    .skills:not(:last-child) {
+      margin-bottom: 30px;
+    }
+
+    
+    #html-bar {
+      animation: html-fill 2s forwards;
+    }
+
+    @keyframes html-fill {
+      100% {
+        width: 90%;
+      }
+    }
+
+    #css-bar {
+      animation: css-fill 2s forwards;
+    }
+
+    @keyframes css-fill {
+      100% {
+        width: 75%;
+      }
+    }
+
+    #javascript-bar {
+      animation: js-fill 2s forwards;
+    }
+
+    @keyframes js-fill {
+      100% {
+        width: 72%;
+      }
+    }
+
+    #Unreal-bar {
+      animation: js-jill 2s forwards;
+    }
+
+    @keyframes js-jill {
+      100% {
+        width: 82%;
+      }
+    }
+
+
+
+
+    body {
+      /* Typography Declarations */
+      color: #222222;
+      font-size: 1em;
+      font-family: "Open Sans", "Helvetica Neue", sans-serif;
+    }
+
+    .content-footer,
+    .masthead-heading,
+    .masthead-intro {
+      text-align: center;
+    }
+
+
+    .masthead {
+      padding: 6em 0;
+      background-image: url('https://i.imgur.com/yGmrlyg.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      border-top: solid 1em #FFCF33;
+    }
+
+    .masthead-intro {
+      /* Layout Declarations */
+      margin-bottom: 0.1em;
+      /* Typography Declarations */
+      font-family: "Gentium Book Basic", Georgia, serif;
+      font-size: 2em;
+    }
+
+    .masthead-heading {
+      /* Layout Declarations */
+      color: #F1C863;
+      margin-top: -0.2em;
+      /* Typography Declarations */
+      font-family: "Open Sans", "Helvetica Neue", sans-serif;
+      font-weight: bold;
+      font-size: 6em;
+      letter-spacing: -0.02em;
+      text-transform: uppercase;
+    }
+
+    .introduction-section,
+    .location-section,
+    .questions-section {
+      max-width: 38em;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 2em;
+    }
+
+    .introduction-section>p,
+    .location-section>p,
+    .questions-section,
+    .content-footer>p {
+      /* Typography Declarations */
+      font-weight: 300;
+      letter-spacing: 0.05em;
+    }
+
+    .questions-section>h2 {
+
+      font-size: 1.2em;
+      font-weight: bold;
+      /* Layout */
+      margin: 2em 0 1em 0;
+    }
+
+    section>h1 {
+      margin-top: 2em;
+    }
+
+    .content-footer,
+    .masthead-heading,
+    .masthead-intro {
+      text-align: center;
+    }
+
+    .masthead {
+      padding: 6em 0;
+      background-image: url('https://i.imgur.com/yGmrlyg.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      border-top: solid 1em #FFCF33;
+    }
+
+    .masthead-intro {
+      margin-bottom: 0.1em;
+      font-family: "Gentium Book Basic", Georgia, serif;
+      font-size: 2em;
+    }
+
+    .masthead-heading {
+      margin-top: -0.2em;
+      font-family: "Open Sans", "Helvetica Neue", sans-serif;
+      font-weight: bold;
+      font-size: 6em;
+      letter-spacing: -0.02em;
+      text-transform: uppercase;
+    }
+
+    .introduction>p,
+    .location>p,
+    .content-footer>p {
+      /* Typography Declarations */
+      font-weight: 300;
+      letter-spacing: 0.05em;
+    }
+
+    h2 {
+      /* Typography Declarations */
+
+      font-size: 2em;
+
+    }
+
+    .introduction-section,
+    .location-section,
+    .questions-section {
+      max-width: 38em;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 2em;
+    }
+
+    .content-footer {
+      margin: 0px 0;
+      padding: 0px 0;
+      text-align: center;
+      background-color: #73A8C2;
+      text-decoration: none;
+    }
+
+    .social>li {
+      display: inline-block;
+      margin: 0 5px;
+    }
+
+    .content-footer>p {
+      color: #F7EDE1;
+    }
+
+    a {
+      font-weight: bold;
+      text-decoration: none;
+      color: #F1C863;
+    }
+
+    @media only screen and (max-width: 500px) {
+      .masthead {
+        padding: 3em 0;
+      }
+
+      .masthead-heading {
+        font-size: 3em;
+      }
+
+      .content-footer {
+        padding: 2em 2.5em;
+      }
+    }
+  </style>
+</head>
+
+
+
+
+<body class="w3-light-grey" style="width:100vw">
+  <div id="header"
+    style="background:#ffffff; width: 100vw; height:10vh; display:flex; justify-content:space-between; padding:8px 20px">
+    <div style="width:250px; margin: auto 0 auto 20px; text-align: center; ">
+      <h1><a href="home.html">HIEUTM</a></h1>
+
+    </div>
+    <div style="margin: auto 0 auto 0;display:flex; width:550px; text-align: center;">
+      <a href="home.html" style=" width:50%; border-top: 2px solid #ded9d6; padding-top: 8px">Home</a>
+      <a href="project.html" style="width:50%; border-top: 2px solid #ded9d6;padding-top: 8px">Project</a>
+      <a href="contact.html" style="width:50%; border-top: 4px solid #F1C863;padding-top: 8px">Contact</a>
+    </div>
+  </div>
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64"
+      style="display:flex; flex-wrap: wrap; justify-content:space-around; ">
+
+      <img id="img01" class="w3-image" style="width:100%;margin-bottom: 15px; margin-right: 10px;">
+      <img id="img02" class="w3-image" style="width:100%;margin-bottom: 15px; margin-right: 10px;">
+      <img id="img03" class="w3-image" style="width:100%;margin-bottom: 15px; margin-right: 10px;">
+      <img id="img04" class="w3-image" style="width:100%;margin-bottom: 15px; margin-right: 10px;">
+
+      <p id="caption"></p>
+    </div>
+  </div>
+
+
+
+
+
+    <div class="w3-content w3-justify" style="max-width: 1000px">
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+
+
+
+
+      <!-- Contact section -->
+      <div class="wrapper" id="contact">
+        <div class="container2">
+          <h2 style="font-weight:bold;" > Get in Touch </h2>
+          <p>For business inquiries and collaborations please contact me below and leave a link to your website or portfolio. 
+            Fill out the form and fill me in with the details. I am looking forward to hearing from you! </p>
+          <form action="/action_page.php" target="_blank">
+            <div class="w3-section">
+              <label>Name</label>
+              <input class="w3-input w3-border" type="text" name="Name" required>
+            </div>
+            <div class="w3-section">
+              <label>Email</label>
+              <input class="w3-input w3-border" type="text" name="Email" required>
+            </div>
+            <div class="w3-section">
+              <label>Message</label>
+              <input class="w3-input w3-border" type="text" name="Message" required>
+            </div>
+            <button type="submit" class="w3-button w3-block w3-blue w3-margin-bottom">Send Message</button>
+          </form>
+        </div>
+      </div>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+
+      <!-- Footer -->
+
+
+
+
+      <!-- End page content -->
+    </div>
+
+    <script>
+      // Script to open and close sidebar
+      function w3_open() {
+        document.getElementById("mySidebar").style.display = "block";
+        document.getElementById("myOverlay").style.display = "block";
+      }
+
+      function w3_close() {
+        document.getElementById("mySidebar").style.display = "none";
+        document.getElementById("myOverlay").style.display = "none";
+      }
+
+      // Modal Image Gallery
+      function onClick1() {
+        document.getElementById("img01").src = '1.jpg';
+        document.getElementById("img02").src = '2.jpg';
+        document.getElementById("img03").src = '3.jpg';
+        document.getElementById("img04").src = '4.jpg';
+        document.getElementById("modal01").style.display = "block";
+        var captionText = document.getElementById("caption");
+        captionText.innerHTML = element.alt;
+      }
+      function onClick2() {
+        document.getElementById("img01").src = '5.jpg';
+        document.getElementById("img02").src = '6.jpg';
+        document.getElementById("img03").src = '7.jpg';
+        document.getElementById("img04").src = '8.jpg';
+        document.getElementById("modal01").style.display = "block";
+        var captionText = document.getElementById("caption");
+        captionText.innerHTML = element.alt;
+      }
+      function onClick3() {
+        document.getElementById("img01").src = '9.jpg';
+        document.getElementById("img02").src = '10.jpg';
+        document.getElementById("img03").src = '11.jpg';
+        document.getElementById("img04").src = '12.jpg';
+        document.getElementById("modal01").style.display = "block";
+        var captionText = document.getElementById("caption");
+        captionText.innerHTML = element.alt;
+      }
+
+    </script>
+
+     <footer class="footer-distributed">
+      <div class="w3-content w3-justify" style="max-width: 1000px">
+        <br>
+
+        <div class="wrapper">
+          <div class="footer-center">
+            <h3>Hieu<span>TM</span></h3>
+            <br>
+
+            <div>
+              <i class="fa fa-map-marker"></i>
+              <p><span>48A. Lang Street</span> Dong Da, Ha Noi</p>
+            </div>
+
+            <div>
+              <i class="fa fa-phone"></i>
+              <p>+84.969.400.099</p>
+            </div>
+
+            <div>
+              <i class="fa fa-envelope"></i>
+              <p>hieu3d244@gmail.com</a></p>
+            </div>
+          </div>
+
+          <div class="footer-center">
+
+
+
+          </div>
+
+          <div class="footer-right">
+
+            <p class="footer-company-about">
+              <span>Social Network</span>
+              Follow social networks to get the latest information
+            </p>
+
+            <div class="footer-icons">
+
+              <a href="https://www.facebook.com/hjeutran22"><i class="fa fa-facebook"></i></a>
+              <a href="https://twitter.com/G2esports"><i class="fa fa-twitter"></i></a>
+              <a href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a>
+              <a href="https://github.com/"><i class="fa fa-github"></i></a>
+
+            </div>
+
+
+
+          </div>
+
+    </footer>
+
+    <div class="footer-mini">
+      <p style="color: white" <b>Copyrights © 2016 - 2022. All rights reserved by Hieutm</b></p>
+    </div>
+
+    <style>
+      @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,500,300,700);
+
+      * {
+        font-family: Open Sans;
+      }
+
+      .footer-mini {
+        background: #262b30;
+        box-sizing: border-box;
+        width: 100%;
+        text-align: center;
+        padding: 30px 50px;
+      }
+
+
+
+      .footer-distributed {
+        background: #192027;
+        box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+        box-sizing: border-box;
+        width: 100%;
+        text-align: left;
+        font: bold 16px sans-serif;
+        padding: 55px 50px;
+      }
+
+      .footer-distributed .footer-left,
+      .footer-distributed .footer-center,
+      .footer-distributed .footer-right {
+        display: inline-block;
+        vertical-align: top;
+      }
+
+      /* Footer left */
+
+      .footer-distributed .footer-left {
+        width: 40%;
+      }
+
+      /* The company logo */
+
+      .footer-distributed h3 {
+        color: #ffffff;
+        font: normal 36px 'Open Sans', cursive;
+        margin: 0;
+      }
+
+      .footer-distributed h3 span {
+        color: lightseagreen;
+      }
+
+      /* Footer links */
+
+      .footer-distributed .footer-links {
+        color: #ffffff;
+        margin: 20px 0 12px;
+        padding: 0;
+      }
+
+      .footer-distributed .footer-links a {
+        display: inline-block;
+        line-height: 1.8;
+        font-weight: 400;
+        text-decoration: none;
+        color: inherit;
+      }
+
+      .footer-distributed .footer-company-name {
+        color: #222;
+        font-size: 14px;
+        font-weight: normal;
+        margin: 0;
+      }
+
+      /* Footer Center */
+
+      .footer-distributed .footer-center {
+        width: 35%;
+      }
+
+      .footer-distributed .footer-center i {
+        background-color: #33383b;
+        color: #ffffff;
+        font-size: 25px;
+        width: 38px;
+        height: 38px;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 42px;
+        margin: 10px 15px;
+        vertical-align: middle;
+      }
+
+      .footer-distributed .footer-center i.fa-envelope {
+        font-size: 17px;
+        line-height: 38px;
+      }
+
+      .footer-distributed .footer-center p {
+        display: inline-block;
+        color: #ffffff;
+        font-weight: 400;
+        vertical-align: middle;
+        margin: 0;
+      }
+
+      .footer-distributed .footer-center p span {
+        display: block;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 2;
+      }
+
+      .footer-distributed .footer-center p a {
+        color: lightseagreen;
+        text-decoration: none;
+        ;
+      }
+
+      .footer-distributed .footer-links a:before {
+        content: "|";
+        font-weight: 300;
+        font-size: 20px;
+        left: 0;
+        color: #fff;
+        display: inline-block;
+        padding-right: 5px;
+      }
+
+      .footer-distributed .footer-links .link-1:before {
+        content: none;
+      }
+
+      /* Footer Right */
+
+      .footer-distributed .footer-right {
+        width: 20%;
+      }
+
+      .footer-distributed .footer-company-about {
+        line-height: 20px;
+        color: #92999f;
+        font-size: 13px;
+        font-weight: normal;
+        margin: 0;
+      }
+
+      .footer-distributed .footer-company-about span {
+        display: block;
+        color: #ffffff;
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 20px;
+      }
+
+      .footer-distributed .footer-icons {
+        margin-top: 25px;
+      }
+
+      .footer-distributed .footer-icons a {
+        display: inline-block;
+        width: 35px;
+        height: 35px;
+        cursor: pointer;
+        background-color: #33383b;
+        border-radius: 2px;
+
+        font-size: 20px;
+        color: #ffffff;
+        text-align: center;
+        line-height: 35px;
+
+        margin-right: 3px;
+        margin-bottom: 5px;
+      }
+
+      /* If you don't want the footer to be responsive, remove these media queries */
+
+      @media (max-width: 880px) {
+
+        .footer-distributed {
+          font: bold 14px sans-serif;
+        }
+
+        .footer-distributed .footer-left,
+        .footer-distributed .footer-center,
+        .footer-distributed .footer-right {
+          display: block;
+          width: 100%;
+          margin-bottom: 40px;
+          text-align: center;
+        }
+
+        .footer-distributed .footer-center i {
+          margin-left: 0;
+        }
+
+      }
+    </style>
+
+
+
+</body>
+
+</html>
